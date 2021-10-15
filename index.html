@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="./estilos/main.css" />
+</head>
+
+<title>Home con sass</title>
+</head>
+
+<body>
+<!--  =================================================================================
+                        HEADER
+======================================================================================-->
+    <header id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid header__barra">
+                        <a class="navbar-brand " href="#"><img class="header__logo scale-up-ver-center "
+                            src="./imagenes/logoInsomnio.svg" alt="" /></a>
+                        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon "></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav navegacion">
+                            <li class="nav-item navegacion__item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item navegacion__item">
+                                <a class="nav-link navegacion__link" href="./vistas/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item navegacion__item">
+                                <a class="nav-link navegacion__link" href="./vistas/clientes.html">Clientes</a>
+                            </li>
+                            <li class="nav-item navegacion__item">
+                                <a class="nav-link navegacion__link" href="./vistas/beneficios.html">Beneficios</a>
+                            </li>
+                            <li class="nav-item navegacion__item">
+                                <a class="nav-link navegacion__link" href="./vistas/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+<!--  =================================================================================
+                        MAIN - SLIDER
+======================================================================================-->
+    <main id="main">
+        <section class="container-fluid sliderPrincipal">
+                <div class="row">
+                    <div class="col-md-12">
+                        
+                        <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+                            <div class="carousel-indicators ">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner ">
+                                <div class="carousel-item active ">
+                                    <img src="./imagenes/portadaSlider1.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block sliderPrincipal__callToAction">
+                                        <h2 class="sliderPrincipal__titulo">El socio estratégico que necesitas</h2>
+                                        <h2 class="sliderPrincipal__texto">Trabajamos los 365 días del año y contamos con envíos
+                                            gratis a todo el país</h2>
+                                        <p class="sliderPrincipal__btn"><a href="./vistas/nosotros.html">lo quiero</a></p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./imagenes/portadaSlider2.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block sliderPrincipal__callToAction">
+                                        <h2 class="sliderPrincipal__titulo">El socio estratégico que necesitas</h2>
+                                        <h2 class="sliderPrincipal__texto">Trabajamos los 365 días del año y contamos con envíos
+                                            gratis a todo el país</h2>
+                                        <p class="sliderPrincipal__btn"><a href="./vistas/nosotros.html">lo quiero</a></p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./imagenes/portadaSlider3.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block sliderPrincipal__callToAction">
+                                        <h2 class="sliderPrincipal__titulo">El socio estratégico que necesitas</h2>
+                                        <h2 class="sliderPrincipal__texto">Trabajamos los 365 días del año y contamos con envíos
+                                            gratis a todo el país</h2>
+                                        <p class="sliderPrincipal__btn"><a href="./vistas/nosotros.html">lo quiero</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+
+        </section>     <!-- Fin de Slider-->
+
+
+
+<!-- =================================================================================
+                        MAIN - CONTENIDO
+======================================================================================-->
+
+        <!-- aquí la segunda parte de la página-->
+        <section id="descripcion">
+            <h3 class="descripcion__titulo">Causa Una Increible Primera Impresión</h3>
+            <p class="descripcion__texto">
+                Insomnio Digital ofrece soluciones creativas y personalizadas a medida de cada cliente. Entregamos
+                calidad superior a una velocidad y valor que supera las expectativas.
+                <br>
+                Buscamos garantizar la comodidad, facilidad de navegación, precios competitivos, diseños profesionales y
+                una entrega rápida.
+            </p>
+        </section>
+
+<!-- =================================================================================
+                        MAIN - ARTICULOS
+======================================================================================-->
+
+<section class="container-fluid articulos">
+    <div class="row">
+        
+            <div class="col-md-4">
+                <article class="articulos__caja">
+                    <img src="./imagenes/disenoGrafico.jpg" alt="" width="100%" />
+                    <h3>Diseño Gráfico</h3>
+                    <p>
+                    Departamento profesional de Dirección y diseño gráfico, diagramación y preprensa, con personal
+                    altamente capacitado.
+                    </p>
+            </article>
+            </div>
+            <div class="col-md-4">
+                <article class="articulos__caja">
+                    <img src="./imagenes/impresionOffset.jpg" alt="" width="100%" />
+                    <h3>Impresión Offset</h3>
+                    <p>
+                    Modernas máquinas offset (HEIDELBERG) de última generación son la garantía para trabajos de calidad
+                    profesional.
+                    </p>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <article class="articulos__caja">
+                    <img src="./imagenes/visualMerchandising.jpg" alt="" width="100%" />
+                    <h3>Visual Merchandising</h3>
+                    <p>
+                    Usamos la creatividad, el marketing y el diseño para captar atención en nuestros puntos de interés y
+                    aumentar la rentabilidad de la marca.
+                    </p>
+                </article>
+            </div>
+        
+    </div>
+        </section>
+    
+    </main> <!-- termina el contenido de la página y empieza el footer-->
+
+<!-- =================================================================================
+                        FOOTER
+======================================================================================-->
+    <footer class="container-fluid" id="footer">
+        <section class="container-fluid articulos">
+            <div class="row">
+                
+        <div class="col-md-4 footer__menu">
+            <!-- menú de footer-->
+            <nav class="footer__navegacion">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./vistas/nosotros.html">Nosotros</a></li>
+                    <li><a href="./vistas/clientes.html">Clientes</a></li>
+                    <li><a href="./vistas/beneficios.html">Beneficios</a></li>
+                    <li><a href="./vistas/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Parrafo de columna del medio de footer-->
+        <div class="col-md-4">
+            <p class="footer__textoCentral">
+            Con más de 10 años de experiencia profesional, equipos modernos y un excelente servicio al cliente, nos
+            comprometemos a brindarle productos y servicios de empaque de la más alta calidad a los mejores precios.
+            </p>
+        </div>
+        <!-- correo que iría en la columna derecha del footer-->
+        <div class="col-md-4">
+            <div class="footer__form">
+                <form action="" method="GET">
+                    <input type="email" name="footeremail" id="footeremail" placeholder="Escribe tu correo" />
+                    <input type="submit" value="Enviar" name="footeremail" />
+                </form>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
